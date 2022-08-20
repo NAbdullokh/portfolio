@@ -6,10 +6,17 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #313536;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background-color: ${({ scrollNav }) => (scrollNav ? "gray" : "#313536")};
 `;
 
 export const Container = styled.div`
-  padding: 0 25px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,7 +47,7 @@ export const ItemsWrapper = styled.div`
 
 ItemsWrapper.Items = styled.a`
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 22px;
   line-height: 31px;
   display: flex;
@@ -48,6 +55,11 @@ ItemsWrapper.Items = styled.a`
   text-align: center;
   color: var(--whiteColor);
   cursor: pointer;
+  transition: 0.3s;
+  :hover {
+    color: var(--greenColor);
+    border-bottom: 1px solid var(--greenColor);
+  }
 `;
 
 export const BtnWrap = styled.div`

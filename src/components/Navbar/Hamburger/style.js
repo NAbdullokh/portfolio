@@ -22,13 +22,12 @@ export const Ul = styled.ul`
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     z-index: 999;
-    top: 4.9rem;
+    top: 5rem;
     left: 0;
     height: 100%;
     width: 100%;
     padding-top: 2rem;
     transition: transform 0.3s ease-in-out;
-    background-color: red;
 
     li {
       padding: 10px 28px;

@@ -7,6 +7,7 @@ export const Button = ({
   height,
   width,
   type,
+  hover,
   mr,
   ml,
   mb,
@@ -20,6 +21,7 @@ export const Button = ({
       ml={ml}
       mb={mb}
       mt={mt}
+      hover={hover}
       type={type}
       width={width}
       height={height}
