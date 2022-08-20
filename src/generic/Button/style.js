@@ -44,6 +44,7 @@ const getHover = (hover) => {
 };
 
 const Container = styled.a`
+  transition: 0.3s;
   display: flex;
   font-style: normal;
   font-weight: 500;

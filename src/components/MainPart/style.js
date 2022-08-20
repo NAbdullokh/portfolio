@@ -13,6 +13,9 @@ export const Container = styled.div`
   display: flex;
   padding: 0 20px;
   padding-bottom: 100px;
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
 `;
 
 export const Box1 = styled.div`
@@ -20,7 +23,11 @@ export const Box1 = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0px 0px 0px 0px;
+  @media (max-width: 950px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
 `;
 
 Box1.Title = styled.p`
@@ -33,6 +40,17 @@ Box1.Title = styled.p`
   align-items: center;
   color: var(--whiteColor);
   margin-bottom: 40px;
+  @media (max-width: 1050px) {
+    font-size: 40px;
+  }
+  @media (max-width: 950px) {
+    text-align: center;
+    width: 100%;
+  }
+  @media (max-width: 500px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 `;
 
 Box1.Description = styled.p`
@@ -44,6 +62,48 @@ Box1.Description = styled.p`
   align-items: center;
   color: var(--grayColor);
   margin-bottom: 30px;
+  width: 80%;
+  @media (max-width: 950px) {
+    text-align: center;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    line-height: 10px;
+    line-height: 40px;
+  }
+`;
+
+export const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+`;
+
+export const EachIcon = styled.a`
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #03a84e;
+  :hover {
+    background-color: ${({ type }) =>
+      type == "instagram"
+        ? "#FF9E2F"
+        : type == "github"
+        ? "#F0F6FC"
+        : type == "codewars"
+        ? "#B1361E"
+        : type == "gmail"
+        ? "#FBBC04"
+        : type == "telegram"
+        ? "#29A9EA"
+        : " "};
+  }
 `;
 
 export const ButtonWrapper = styled.div`
@@ -55,11 +115,13 @@ export const Box2 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-right: 20px; */
 `;
 
 Box2.Img = styled.img`
   width: 100%;
   border-radius: 50%;
   cursor: pointer;
+  @media (max-width: 950px) {
+    width: 80%;
+  }
 `;
