@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Button from "../../generic/Button";
-import { BtnWrap, Container, ItemsWrapper, Wrapper } from "./style";
+import {
+  BtnWrap,
+  Container,
+  ItemsWrapper,
+  TitleWrapper,
+  Wrapper,
+} from "./style";
 import Nav from "./Hamburger/index";
 
 const Navbar = () => {
@@ -17,7 +23,10 @@ const Navbar = () => {
   return (
     <Wrapper scrollNav={scrollNav}>
       <Container>
-        <Container.Title href="#">Abdulloh</Container.Title>
+        <TitleWrapper>
+          <Container.Title1 href="#">Abdulloh</Container.Title1>
+          <Container.Title2 href="#">Abdulloh</Container.Title2>
+        </TitleWrapper>
         <ItemsWrapper>
           <ItemsWrapper.Items href="#home">Home</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#about">About</ItemsWrapper.Items>

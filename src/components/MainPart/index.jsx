@@ -18,21 +18,37 @@ import { TbBrandTelegram } from "react-icons/tb";
 import { TbBrandInstagram } from "react-icons/tb";
 import { SiCodewars } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
+import { Typewriter } from "react-simple-typewriter";
+// import "react-simple-typewriter/dist/index.css";
 
 const Main = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+  const typeWriter = ["React JS Developer", "Problem Solver", "Human"];
   return (
     <Wrapper>
       <Container id="home">
         <Box1 data-aos="fade-right">
           <Box1.Title>
-            I have lots of things to prove to myself. One is I can live my life
-            fearlessly
+            Hi There , <br />
+            I'm Abdulloh Nigmatullaev
           </Box1.Title>
           <Box1.Description>
-            Web Developer, Problem Solver and Haker
+            I'm
+            <span
+              style={{ color: "red", marginLeft: "10px", fontWeight: "500" }}
+            >
+              <Typewriter
+                loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={100}
+                deleteSpeed={100}
+                delaySpeed={100}
+                words={typeWriter}
+              />
+            </span>
           </Box1.Description>
           <IconWrapper>
             <EachIcon

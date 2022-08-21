@@ -2,7 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  background-color: #252829;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 51, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* background-color: #2506ad; */
 `;
 
 export const Container = styled.div`
@@ -26,30 +33,51 @@ export const Box1 = styled.div`
   @media (max-width: 950px) {
     margin-top: 50px;
     margin-bottom: 50px;
-    align-items: center;
+    align-items: flex-start;
   }
 `;
 
 Box1.Title = styled.p`
-  width: 90%;
+  width: 100%;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 52px;
   line-height: 64px;
   display: flex;
   align-items: center;
   color: var(--whiteColor);
   margin-bottom: 40px;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #00e472 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
   @media (max-width: 1050px) {
     font-size: 40px;
   }
   @media (max-width: 950px) {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   @media (max-width: 500px) {
     font-size: 30px;
     line-height: 40px;
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
   }
 `;
 
@@ -92,15 +120,15 @@ export const EachIcon = styled.a`
   background-color: #03a84e;
   :hover {
     background-color: ${({ type }) =>
-      type == "instagram"
+      type === "instagram"
         ? "#FF9E2F"
-        : type == "github"
+        : type === "github"
         ? "#F0F6FC"
-        : type == "codewars"
+        : type === "codewars"
         ? "#B1361E"
-        : type == "gmail"
+        : type === "gmail"
         ? "#FBBC04"
-        : type == "telegram"
+        : type === "telegram"
         ? "#29A9EA"
         : " "};
   }
@@ -122,6 +150,6 @@ Box2.Img = styled.img`
   border-radius: 50%;
   cursor: pointer;
   @media (max-width: 950px) {
-    width: 80%;
+    width: 60%;
   }
 `;
