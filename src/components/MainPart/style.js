@@ -2,14 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 51, 121, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  /* background-color: #2506ad; */
+  background-color: #252829;
 `;
 
 export const Container = styled.div`
@@ -151,5 +144,8 @@ Box2.Img = styled.img`
   cursor: pointer;
   @media (max-width: 950px) {
     width: 60%;
+  }
+  @media (max-height: 700px) {
+    display: none;
   }
 `;

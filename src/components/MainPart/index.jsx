@@ -19,7 +19,6 @@ import { TbBrandInstagram } from "react-icons/tb";
 import { SiCodewars } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
 import { Typewriter } from "react-simple-typewriter";
-// import "react-simple-typewriter/dist/index.css";
 
 const Main = () => {
   useEffect(() => {
@@ -32,17 +31,21 @@ const Main = () => {
         <Box1 data-aos="fade-right">
           <Box1.Title>
             Hi There , <br />
-            I'm Abdulloh Nigmatullaev
+            Abdulloh Nigmatullaev
           </Box1.Title>
           <Box1.Description>
             I'm
             <span
-              style={{ color: "red", marginLeft: "10px", fontWeight: "500" }}
+              style={{
+                color: "#ff7b00",
+                marginLeft: "10px",
+                fontWeight: "500",
+              }}
             >
               <Typewriter
                 loop
                 cursor
-                cursorStyle="_"
+                cursorStyle="|"
                 typeSpeed={100}
                 deleteSpeed={100}
                 delaySpeed={100}
@@ -57,7 +60,7 @@ const Main = () => {
               href="https://github.com/NAbdullokh"
             >
               <VscGithub
-                style={{ color: "#09011b", transform: "scale(1.5)" }}
+                style={{ color: "#161B22", transform: "scale(1.5)" }}
               />
             </EachIcon>
 
@@ -67,7 +70,7 @@ const Main = () => {
               href="https://instagram.com/a.nigmatullaev"
             >
               <TbBrandInstagram
-                style={{ color: "#09011b", transform: "scale(1.5)" }}
+                style={{ color: "white", transform: "scale(1.5)" }}
               />
             </EachIcon>
 
@@ -77,7 +80,7 @@ const Main = () => {
               href="https://t.me/abdullokh_3747"
             >
               <TbBrandTelegram
-                style={{ color: "#09011b", transform: "scale(1.5)" }}
+                style={{ color: "white", transform: "scale(1.5)" }}
               />
             </EachIcon>
 
@@ -86,9 +89,7 @@ const Main = () => {
               target="_blank"
               href="https://codewars.com/users/Abdulloh_07"
             >
-              <SiCodewars
-                style={{ color: "#09011b", transform: "scale(1.5)" }}
-              />
+              <SiCodewars style={{ color: "black", transform: "scale(1.5)" }} />
             </EachIcon>
 
             <EachIcon
@@ -96,7 +97,7 @@ const Main = () => {
               target="_blank"
               href="malito: country.abu@gmail.com"
             >
-              <SiGmail style={{ color: "#09011b", transform: "scale(1.5)" }} />
+              <SiGmail style={{ color: "white", transform: "scale(1.5)" }} />
             </EachIcon>
           </IconWrapper>
           <ButtonWrapper>

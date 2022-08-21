@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   right: 0;
   z-index: 1000;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
-  background-color: ${({ scrollNav }) => (scrollNav ? "gray" : "#ffffff")};
+  background-color: ${({ scrollNav }) => (scrollNav ? "gray" : "#313536")};
 `;
 
 export const Container = styled.div`
@@ -41,7 +41,6 @@ Container.Title1 = styled.a`
   position: absolute;
   color: transparent;
   -webkit-text-stroke: 2px #03a9f4;
-  /* transform: translate(-50%, -50%); */
 `;
 
 Container.Title2 = styled.a`
@@ -53,7 +52,6 @@ Container.Title2 = styled.a`
   align-items: center;
   color: var(--whiteColor);
   position: absolute;
-  /* transform: translate(-50%, -50%); */
   color: #03a9f4;
   animation: animate 4s ease-in-out infinite;
   @keyframes animate {
@@ -100,18 +98,18 @@ export const ItemsWrapper = styled.div`
 
 ItemsWrapper.Items = styled.a`
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 31px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
   :hover {
-    color: #011aff;
-    border-bottom: 1px solid var(--greenColor);
+    color: var(--greenColor);
+    border-bottom: 2px solid var(--greenColor);
   }
 `;
 
