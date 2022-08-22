@@ -12,7 +12,6 @@ import {
   Wrapper,
 } from "./style";
 import Img from "../../assets/img/hero.png";
-import Tilt from "react-vanilla-tilt";
 import { VscGithub } from "react-icons/vsc";
 import { TbBrandTelegram } from "react-icons/tb";
 import { TbBrandInstagram } from "react-icons/tb";
@@ -108,17 +107,7 @@ const Main = () => {
         </Box1>
 
         <Box2 data-aos="fade-left">
-          <Tilt
-            options={{ scale: 2, max: 25 }}
-            style={{
-              background: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Box2.Img className="manImg" data-tilt src={Img} />
-          </Tilt>
+          <Box2.Img className="manImg" data-tilt src={Img} />
         </Box2>
       </Container>
     </Wrapper>

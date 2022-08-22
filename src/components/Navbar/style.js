@@ -10,8 +10,10 @@ export const Wrapper = styled.div`
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
-  background-color: ${({ scrollNav }) => (scrollNav ? "gray" : "#313536")};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 1px 4px rgba(146, 161, 176, 0.3)" : "none"};
+  background-color: ${({ scrollNav }) => (scrollNav ? "#313536" : "#252829")};
+  transition: 0.5s;
 `;
 
 export const Container = styled.div`

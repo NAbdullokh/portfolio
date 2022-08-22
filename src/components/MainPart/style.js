@@ -15,6 +15,7 @@ export const Container = styled.div`
   padding-bottom: 100px;
   @media (max-width: 950px) {
     flex-direction: column;
+    height: 100vh;
   }
 `;
 
@@ -144,8 +145,5 @@ Box2.Img = styled.img`
   cursor: pointer;
   @media (max-width: 950px) {
     width: 60%;
-  }
-  @media (max-height: 700px) {
-    display: none;
   }
 `;
