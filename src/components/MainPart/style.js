@@ -128,7 +128,7 @@ export const EachIcon = styled.a`
   }
 `;
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.a`
   display: flex;
 `;
 

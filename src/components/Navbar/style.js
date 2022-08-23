@@ -113,6 +113,10 @@ ItemsWrapper.Items = styled.a`
     color: var(--greenColor);
     border-bottom: 2px solid var(--greenColor);
   }
+  :active {
+    color: var(--greenColor);
+    border-bottom: 2px solid var(--greenColor);
+  }
 `;
 
 export const BtnWrap = styled.div`

@@ -17,6 +17,7 @@ import { TbBrandTelegram } from "react-icons/tb";
 import { TbBrandInstagram } from "react-icons/tb";
 import { SiCodewars } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
+import resume from "../../assets/resume.png";
 import { Typewriter } from "react-simple-typewriter";
 
 const Main = () => {
@@ -99,7 +100,7 @@ const Main = () => {
               <SiGmail style={{ color: "white", transform: "scale(1.5)" }} />
             </EachIcon>
           </IconWrapper>
-          <ButtonWrapper>
+          <ButtonWrapper href={resume} download>
             <Button width="191px" mr="25" type="primary" hover="secondary">
               Dowland CV
             </Button>
