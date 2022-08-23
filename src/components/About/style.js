@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 20px 0 20px 0;
+  margin: 40px 0 20px 0;
 `;
 
 export const Container = styled.div`
@@ -36,7 +36,7 @@ export const BoxWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 50px;
-  background-color: red;
+  padding: 20px 0 20px 0;
   @media (max-width: 950px) {
     flex-direction: column;
   }
@@ -45,20 +45,20 @@ export const BoxWrapper = styled.div`
 export const Box1 = styled.div`
   flex: 1;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* background-color: red; */
+  justify-content: center;
 `;
 
 Box1.Img = styled.img`
-  width: 100%;
-  height: fit-content;
-  transform: scale(0.4);
+  width: 40%;
+  height: 95%;
   border-radius: 15px;
 `;
 
 export const Box2 = styled.div`
   flex: 1;
+  @media (max-width: 950px) {
+    padding-top: 50px;
+  }
 `;
 
 Box2.Name = styled.p`
@@ -69,4 +69,34 @@ Box2.Name = styled.p`
 
 Box2.Job = styled.p`
   font-weight: 600;
+`;
+
+Box2.Description = styled.p`
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+`;
+
+export const InfoWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  @media (max-width: 500px) {
+    gap: 0;
+  }
+`;
+
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const EachInfo = styled.p`
+  display: flex;
+  color: var(--secondGreen);
+  span {
+    color: #000000;
+    margin-left: 5px;
+  }
 `;

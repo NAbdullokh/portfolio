@@ -1,5 +1,14 @@
 import React, { useEffect } from "react";
-import { Box1, Box2, BoxWrapper, Container, Wrapper } from "./style";
+import {
+  Box1,
+  Box2,
+  BoxWrapper,
+  Container,
+  EachInfo,
+  Info,
+  InfoWrapper,
+  Wrapper,
+} from "./style";
 import { FaUser } from "react-icons/fa";
 import img from "../../assets/img/myImg.jpg";
 import Aos from "aos";
@@ -16,13 +25,39 @@ const About = () => {
           <FaUser style={{ marginRight: "5px" }} /> About <span>me</span>
         </Container.Title>
         <BoxWrapper>
-          {/* data-aos="zoom-in-right" */}
-          <Box1>
+          <Box1 data-aos="zoom-in-right">
             <Box1.Img src={img} data-tilt />
           </Box1>
-          <Box2>
+          <Box2 data-aos="zoom-in-left">
             <Box2.Name>I'm Abdulloh</Box2.Name>
             <Box2.Job>Frontend Developer</Box2.Job>
+            <Box2.Description>
+              I am Fron-tend Developer. I study in 249 school at 9 th grade.I am
+              an Information Technology undergraduate from WBA.I am very
+              passionate about improving my coding skills & developing
+              applications & websites. I build WebApps and Websites using
+              Reactjs. Working for myself to improve my skills. Love to build
+              Front-End clones.
+            </Box2.Description>
+            <InfoWrapper>
+              <Info>
+                <EachInfo>
+                  Age: <span>15</span>
+                </EachInfo>
+                <EachInfo>
+                  Phone: <span>+998 981153747</span>
+                </EachInfo>
+              </Info>
+
+              <Info>
+                <EachInfo>
+                  Email : <span>country.abu@gmail.com</span>
+                </EachInfo>
+                <EachInfo>
+                  Place : <span>Tashkent City</span>
+                </EachInfo>
+              </Info>
+            </InfoWrapper>
           </Box2>
         </BoxWrapper>
       </Container>

@@ -30,7 +30,7 @@ const Main = () => {
         <Box1 data-aos="fade-right">
           <Box1.Title>
             Hi There , <br />
-            Abdulloh Nigmatullaev
+            I'm Abdulloh Nigmatullaev
           </Box1.Title>
           <Box1.Description>
             I'm

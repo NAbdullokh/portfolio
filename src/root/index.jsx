@@ -2,6 +2,7 @@ import React from "react";
 import About from "../components/About";
 import Main from "../components/MainPart";
 import Navbar from "../components/Navbar";
+import Skills from "../components/Skills";
 
 const Root = () => {
   return (
@@ -9,6 +10,7 @@ const Root = () => {
       <Navbar />
       <Main />
       <About />
+      <Skills />
     </div>
   );
 };
