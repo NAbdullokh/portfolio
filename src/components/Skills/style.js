@@ -19,6 +19,9 @@ export const Container = styled.div`
 `;
 
 Container.Title = styled.p`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px 0 20px 0;
   font-style: normal;
   font-weight: 700;
@@ -57,7 +60,6 @@ export const Card = styled.div`
   border-radius: 15px;
   cursor: pointer;
   :hover {
-    transition: 0.05s;
     box-shadow: 0 10px 10px #110252;
   }
 `;
