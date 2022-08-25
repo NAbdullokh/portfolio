@@ -31,8 +31,8 @@ const Navbar = () => {
           <ItemsWrapper.Items href="#home">Home</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#about">About</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#skills">Skills</ItemsWrapper.Items>
-          <ItemsWrapper.Items href="#clients">Clients</ItemsWrapper.Items>
-          <ItemsWrapper.Items href="#blog">Blog</ItemsWrapper.Items>
+          <ItemsWrapper.Items href="#education">Education</ItemsWrapper.Items>
+          <ItemsWrapper.Items href="#projects">Projects</ItemsWrapper.Items>
         </ItemsWrapper>
         <Nav />
         <BtnWrap>

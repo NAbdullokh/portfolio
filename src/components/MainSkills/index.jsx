@@ -15,12 +15,12 @@ const MainSkills = () => {
           Main <span> skills</span>
         </Container.Title>
         <SkillsWrapper>
-          <figure class="chart" data-percent="75">
+          <figure data-aos="fade-right" className="chart" data-percent="75">
             <figcaption></figcaption>
-            <img class="html" src={html} alt="rasm" />
+            <img className="html" src={html} alt="rasm" />
             <svg width="200" height="200">
               <circle
-                class="outer"
+                className="outer"
                 cx="95"
                 cy="95"
                 r="85"
@@ -30,12 +30,17 @@ const MainSkills = () => {
             <p style={{ marginTop: "20px" }}>HTML</p>
           </figure>
 
-          <figure class="chart" data-percent="75">
+          <figure
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="chart"
+            data-percent="75"
+          >
             <figcaption></figcaption>
-            <img class="css" alt="rasm" src={css} />
+            <img className="css" alt="rasm" src={css} />
             <svg width="200" height="200">
               <circle
-                class="outer"
+                className="outer"
                 cx="95"
                 cy="95"
                 r="85"
@@ -45,12 +50,17 @@ const MainSkills = () => {
             <p style={{ marginTop: "20px" }}>CSS</p>
           </figure>
 
-          <figure class="chart" data-percent="50">
+          <figure
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="chart"
+            data-percent="50"
+          >
             <figcaption></figcaption>
-            <img class="javascript" alt="rasm" src={js} />
+            <img className="javascript" alt="rasm" src={js} />
             <svg width="200" height="200">
               <circle
-                class="outer"
+                className="outer"
                 cx="95"
                 cy="95"
                 r="85"
@@ -60,17 +70,17 @@ const MainSkills = () => {
             <p style={{ marginTop: "20px" }}>JAVASCRIPT</p>
           </figure>
 
-          <figure class="chart" data-percent="50">
+          <figure data-aos="fade-left" className="chart" data-percent="50">
             <figcaption></figcaption>
             <img
-              class="react"
+              className="react"
               alt="rasm"
               src={react}
               style={{ height: "120px" }}
             />
             <svg width="200" height="200">
               <circle
-                class="outer"
+                className="outer"
                 cx="95"
                 cy="95"
                 r="85"

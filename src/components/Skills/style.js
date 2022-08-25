@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #252829;
-  margin: 50px 0 50px 0;
+  padding: 20px 0 50px 0;
 `;
 
 export const Container = styled.div`

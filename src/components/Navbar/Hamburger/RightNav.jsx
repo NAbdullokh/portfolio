@@ -19,11 +19,11 @@ export const RightNav = ({ open, setOpen }) => {
       <Title onClick={() => setOpen(false)} href="#skills">
         Skills
       </Title>
-      <Title onClick={() => setOpen(false)} href="#clients">
-        Clients
+      <Title onClick={() => setOpen(false)} href="#education">
+        Education
       </Title>
-      <Title onClick={() => setOpen(false)} href="#blog">
-        Blog
+      <Title onClick={() => setOpen(false)} href="#projects">
+        Projects
       </Title>
       <Button mr="40" width="190px" height="50px" href="#contact">
         Contact

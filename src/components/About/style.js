@@ -4,7 +4,8 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 40px 0 20px 0;
+  padding: 40px 0 40px 0;
+  background-color: #e5ecfb;
 `;
 
 export const Container = styled.div`

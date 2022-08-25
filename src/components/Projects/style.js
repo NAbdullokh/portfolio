@@ -4,13 +4,15 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 20px 0;
+  background-color: #000030;
+  padding: 50px 0 50px 0;
 `;
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: auto;
+  padding: 0 25px;
 `;
 
 Container.Title = styled.div`
@@ -29,13 +31,4 @@ Container.Title = styled.div`
   span {
     color: var(--greenColor);
   }
-`;
-
-export const SkillsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
-  margin: 40px 0 40px 0;
 `;
