@@ -18,13 +18,12 @@ import { TbBrandInstagram } from "react-icons/tb";
 import { SiCodewars } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
 import resume from "../../assets/resume.png";
-import { Typewriter } from "react-simple-typewriter";
+import Typewriter from "typewriter-effect";
 
 const Main = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-  const typeWriter = ["React JS Developer", "Problem Solver", "Human"];
   return (
     <Wrapper>
       <Container id="home">
@@ -43,13 +42,11 @@ const Main = () => {
               }}
             >
               <Typewriter
-                loop
-                cursor
-                cursorStyle="|"
-                typeSpeed={100}
-                deleteSpeed={100}
-                delaySpeed={100}
-                words={typeWriter}
+                options={{
+                  strings: ["React Js Developer", "Problem Solver", "Human"],
+                  autoStart: true,
+                  loop: true,
+                }}
               />
             </span>
           </Box1.Description>

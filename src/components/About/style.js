@@ -37,7 +37,7 @@ export const BoxWrapper = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 50px;
-  padding: 20px 0 20px 0;
+  padding: 40px 0 40px 0;
   @media (max-width: 950px) {
     flex-direction: column;
   }
