@@ -88,22 +88,58 @@ Card.Img = styled.img`
   border-top-right-radius: 8px;
   height: 200px;
 `;
+export const Details = styled.div`
+  display: none;
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+`;
 
-Card.Footer = styled.div`
+export const Footer = styled.div`
   height: 30%;
   width: 100%;
-  background-color: yellow;
+  background-color: #ffd900;
   position: absolute;
   top: 85%;
   left: 0;
   display: flex;
-  align-items: center;
-  padding-left: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  transition: 0.2s;
+  transition: 0.1s;
   :hover {
     height: 100%;
     top: 15%;
+  }
+  &:hover ${Details} {
+    display: flex;
+    transition: 0.3s;
+  }
+`;
+Footer.Desc = styled.p``;
+
+export const BtnWrapper2 = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 40px 0px 0 0;
+  padding-right: 20px;
+`;
+
+export const Btn2 = styled.a`
+  width: 120px;
+  height: 50px;
+  background-color: #000030;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 10px;
+  :hover {
+    background-color: #310ae0f5;
   }
 `;

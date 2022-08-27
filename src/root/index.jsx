@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Education from "../components/Education";
 import Main from "../components/MainPart";
 import MainSkills from "../components/MainSkills";
@@ -17,6 +18,7 @@ const Root = () => {
       <MainSkills />
       <Education />
       <Projects />
+      <Contact />
     </div>
   );
 };

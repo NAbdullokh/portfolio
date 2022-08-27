@@ -10,7 +10,13 @@ import {
   Wrapper,
   Btn,
   active,
+  Footer,
+  Details,
+  BtnWrapper2,
+  Btn2,
 } from "./style";
+import { BiCodeAlt } from "react-icons/bi";
+import { BsEyeFill } from "react-icons/bs";
 
 const Projects = () => {
   const { type, setType } = useContext(Cateogry);
@@ -42,7 +48,20 @@ const Projects = () => {
             return (
               <Card data-aos="zoom-in-up" key={value.id}>
                 <Card.Img src={value.img} />
-                <Card.Footer>{value.title}</Card.Footer>
+                <Footer>
+                  <p>{value.title}</p>
+                  <Details>
+                    <Footer.Desc>{value.desc}</Footer.Desc>
+                    <BtnWrapper2>
+                      <Btn2 href={value.demo}>
+                        <BsEyeFill /> View
+                      </Btn2>
+                      <Btn2 href={value.code}>
+                        <BiCodeAlt /> Code
+                      </Btn2>
+                    </BtnWrapper2>
+                  </Details>
+                </Footer>
               </Card>
             );
           })}
