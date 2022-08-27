@@ -40,7 +40,7 @@ export const CardWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.5rem;
   width: 100%;
   padding: 20px;
   background-color: #34036d;
@@ -53,8 +53,9 @@ export const Card = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 12em;
-  height: 120px;
+  /* width: 12em;
+  height: 120px; */
+  flex: 1 1 10rem;
   padding: 10px 0 10px 0;
   background-color: #05001f;
   border-radius: 15px;

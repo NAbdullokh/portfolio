@@ -23,6 +23,10 @@ const Education = () => {
           <IoSchoolSharp style={{ marginRight: "5px" }} />
           My <span>Education</span>
         </Container.Title>
+        <p style={{ marginBottom: "20px" }}>
+          Education Is Not The Learning Of Facts, But The Training Of The Mind
+          To Think.
+        </p>
         <Line>
           <SideLine type="first">
             <IconWrapper>
