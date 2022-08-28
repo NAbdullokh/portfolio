@@ -125,6 +125,9 @@ export const Content = styled.div`
   @media (max-width: 700px) {
     left: 10px;
   }
+  @media (max-width: 400px) {
+    width: 250px;
+  }
 `;
 
 Content.Title = styled.p``;
