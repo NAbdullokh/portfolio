@@ -14,8 +14,8 @@ const MainSkills = () => {
           <RiFolderSettingsFill style={{ marginRight: "5px" }} />
           Main <span> skills</span>
         </Container.Title>
-        <SkillsWrapper>
-          <figure data-aos="fade-right" className="chart" data-percent="75">
+        <SkillsWrapper data-aos="fade-up">
+          <figure className="chart" data-percent="75">
             <figcaption></figcaption>
             <img className="html" src={html} alt="rasm" />
             <svg width="200" height="200">
@@ -30,12 +30,7 @@ const MainSkills = () => {
             <p style={{ marginTop: "20px" }}>HTML</p>
           </figure>
 
-          <figure
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="chart"
-            data-percent="75"
-          >
+          <figure className="chart" data-percent="75">
             <figcaption></figcaption>
             <img className="css" alt="rasm" src={css} />
             <svg width="200" height="200">
@@ -50,12 +45,7 @@ const MainSkills = () => {
             <p style={{ marginTop: "20px" }}>CSS</p>
           </figure>
 
-          <figure
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            className="chart"
-            data-percent="50"
-          >
+          <figure className="chart" data-percent="50">
             <figcaption></figcaption>
             <img className="javascript" alt="rasm" src={js} />
             <svg width="200" height="200">
@@ -70,7 +60,7 @@ const MainSkills = () => {
             <p style={{ marginTop: "20px" }}>JAVASCRIPT</p>
           </figure>
 
-          <figure data-aos="fade-left" className="chart" data-percent="50">
+          <figure className="chart" data-percent="50">
             <figcaption></figcaption>
             <img
               className="react"

@@ -118,14 +118,15 @@ export const Footer = styled.div`
     transition: 0.3s;
   }
 `;
-Footer.Desc = styled.p``;
 
+Footer.Desc = styled.p``;
 export const BtnWrapper2 = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin: 40px 0px 0 0;
   padding-right: 20px;
+  transition: 0.7s;
 `;
 
 export const Btn2 = styled.a`

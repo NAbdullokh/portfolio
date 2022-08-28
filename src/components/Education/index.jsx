@@ -33,7 +33,7 @@ const Education = () => {
               <IoSchoolSharp />
             </IconWrapper>
 
-            <Right data-aos="fade-left">
+            <Right data-aos="fade-up">
               <Content type="right">
                 <Content.Title>PDP Academy</Content.Title>
                 <Content.Desc>
@@ -47,7 +47,7 @@ const Education = () => {
               <IoSchoolSharp />
             </IconWrapper>
 
-            <Left data-aos="fade-right">
+            <Left data-aos="fade-up">
               <Content type="left">
                 <Content.Title>Web Brain Academy</Content.Title>
                 <Content.Desc>
@@ -61,7 +61,7 @@ const Education = () => {
               <IoSchoolSharp />
             </IconWrapper>
 
-            <Right data-aos="fade-left" type="right2">
+            <Right data-aos="fade-up" type="right2">
               <Content type="right2">
                 <Content.Title>Web Brain Academy</Content.Title>
                 <Content.Desc>

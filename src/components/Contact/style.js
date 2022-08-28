@@ -5,13 +5,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px 0 50px 0;
+  background-color: #e5ecfb;
 `;
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   padding: 0 25px;
-  background-color: #e5ecfb;
   margin: auto;
 `;
 
@@ -78,5 +78,29 @@ InputWrapper.Area = styled.textarea`
   padding: 10px 10px 10px 20px;
   :focus {
     border: 3px solid #00e472;
+  }
+`;
+
+export const Btn = styled.button`
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #2506ad;
+  color: white;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: auto;
+  :active {
+    opacity: 0.7%;
+    transform: scale(0.98);
+  }
+  :hover {
+    opacity: 0.7;
   }
 `;

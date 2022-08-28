@@ -112,6 +112,7 @@ export const EachIcon = styled.a`
   cursor: pointer;
   transition: 0.3s;
   background-color: #03a84e;
+
   :hover {
     background-color: ${({ type }) =>
       type === "instagram"
