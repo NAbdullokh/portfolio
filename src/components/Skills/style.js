@@ -31,6 +31,7 @@ Container.Title = styled.p`
   letter-spacing: 0.13em;
   color: var(--grayColor);
   cursor: pointer;
+  flex-wrap: wrap;
   span {
     color: var(--greenColor);
   }

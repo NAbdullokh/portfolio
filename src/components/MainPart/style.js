@@ -112,6 +112,10 @@ export const EachIcon = styled.a`
   cursor: pointer;
   transition: 0.3s;
   background-color: #03a84e;
+  @media (max-width: 350px) {
+    width: 40px;
+    height: 40px;
+  }
 
   :hover {
     background-color: ${({ type }) =>
@@ -146,5 +150,8 @@ Box2.Img = styled.img`
   cursor: pointer;
   @media (max-width: 950px) {
     width: 60%;
+  }
+  @media (max-width: 350px) {
+    display: none;
   }
 `;

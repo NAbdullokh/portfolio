@@ -25,10 +25,10 @@ const About = () => {
           <FaUser style={{ marginRight: "5px" }} /> About <span>me</span>
         </Container.Title>
         <BoxWrapper>
-          <Box1 data-aos="zoom-in-right">
+          <Box1 data-aos="fade-up">
             <Box1.Img src={img} data-tilt />
           </Box1>
-          <Box2 data-aos="zoom-in-left">
+          <Box2 data-aos="fade-up">
             <Box2.Name>I'm Abdulloh</Box2.Name>
             <Box2.Job>Frontend Developer</Box2.Job>
             <Box2.Description>

@@ -40,7 +40,6 @@ export const Line = styled.div`
   position: relative;
   padding-bottom: 30px;
   @media (max-width: 700px) {
-    /* padding-left: 20px; */
     margin-right: auto;
   }
 `;
@@ -127,6 +126,9 @@ export const Content = styled.div`
   }
   @media (max-width: 400px) {
     width: 250px;
+  }
+  @media (max-width: 340px) {
+    width: 220px;
   }
 `;
 
