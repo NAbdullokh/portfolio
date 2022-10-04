@@ -2,8 +2,11 @@ import React from "react";
 import { CountItem } from "../../mock/countUp";
 import { Box, Container, IconWrap, Wrapper } from "./style";
 import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
+import { useState } from "react";
 
 const Count = () => {
+  const [counterOn, setCounterOn] = useState(false);
   return (
     <Wrapper>
       <Container>
@@ -26,7 +29,12 @@ const Count = () => {
               </IconWrap>
 
               <Box.Number>
-                <CountUp end={value.number} duration={5} />
+                <ScrollTrigger
+                  onEnter={() => setCounterOn(true)}
+                  onExit={() => setCounterOn(false)}
+                >
+                  {counterOn && <CountUp end={value.number} duration={5} />}
+                </ScrollTrigger>
               </Box.Number>
               <Box.Title>{value.title}</Box.Title>
             </Box>
