@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Count from "../components/CountUp";
@@ -11,18 +12,19 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
 const Root = () => {
+  const [dark, setDark] = useState(true);
   return (
     <div>
-      <Navbar />
-      <Main />
-      <Count />
-      <About />
-      <Skills />
-      <MainSkills />
-      <Education />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Navbar darkNightMode={dark} setDark={setDark} />
+      <Main darkNightMode={dark} />
+      <Count darkNightMode={dark} />
+      <About darkNightMode={dark} />
+      <Skills darkNightMode={dark} />
+      <MainSkills darkNightMode={dark} />
+      <Education darkNightMode={dark} />
+      <Projects darkNightMode={dark} />
+      <Contact darkNightMode={dark} />
+      <Footer darkNightMode={dark} />
     </div>
   );
 };

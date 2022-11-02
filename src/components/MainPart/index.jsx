@@ -17,7 +17,8 @@ import { TbBrandTelegram } from "react-icons/tb";
 import { TbBrandInstagram } from "react-icons/tb";
 import { SiCodewars } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
-import resume from "../../assets/resume.png";
+// import resume from "../../assets/resume.png";
+import resume from "../../assets/Nigmatullaev Abdulloh.pdf";
 import Typewriter from "typewriter-effect";
 
 const Main = () => {

@@ -8,6 +8,7 @@ import {
   Wrapper,
 } from "./style";
 import Nav from "./Hamburger/index";
+import ChangeLanguage from "../ChangeLanguage";
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -34,6 +35,7 @@ const Navbar = () => {
           <ItemsWrapper.Items href="#education">Education</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#projects">Projects</ItemsWrapper.Items>
         </ItemsWrapper>
+        <ChangeLanguage />
         <Nav />
         <BtnWrap>
           <Button width="190px" height="50px" href="#contact">

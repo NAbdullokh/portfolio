@@ -10,7 +10,8 @@ import {
   Wrapper,
 } from "./style";
 import { FaUser } from "react-icons/fa";
-import img from "../../assets/img/myImg.jpg";
+// import img from "../../assets/img/myImg.jpg";
+import img from "../../assets/img/myPic.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
