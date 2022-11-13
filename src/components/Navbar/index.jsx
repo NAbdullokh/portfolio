@@ -9,6 +9,8 @@ import {
 } from "./style";
 import Nav from "./Hamburger/index";
 import ChangeLanguage from "../ChangeLanguage";
+import { useTranslation } from "react-i18next";
+import LanguageDropdownComponent from "../LanguageDropDown";
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -21,6 +23,8 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
   }, []);
+
+const {t} = useTranslation()
   return (
     <Wrapper scrollNav={scrollNav}>
       <Container>
@@ -29,13 +33,14 @@ const Navbar = () => {
           <Container.Title2 href="#">Abdulloh</Container.Title2>
         </TitleWrapper>
         <ItemsWrapper>
-          <ItemsWrapper.Items href="#home">Home</ItemsWrapper.Items>
+          <ItemsWrapper.Items href="#home">{t('Home')}</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#about">About</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#skills">Skills</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#education">Education</ItemsWrapper.Items>
           <ItemsWrapper.Items href="#projects">Projects</ItemsWrapper.Items>
         </ItemsWrapper>
-        <ChangeLanguage />
+        <LanguageDropdownComponent /> 
+        {/* <ChangeLanguage /> */}
         <Nav />
         <BtnWrap>
           <Button width="190px" height="50px" href="#contact">

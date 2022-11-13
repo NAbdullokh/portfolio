@@ -2,12 +2,12 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import translationEN from "./locales/en/translation.json";
-import translationRU from "./locales/ru/translation.json";
-import translationUZ from "./locales/uz/translation.json";
-import EnglishFlag from "../assets/images/icons/usa.svg";
-import RusFlag from "../assets/images/icons/rus.svg";
-import UzbFlag from "../assets/images/icons/uzb.svg";
+import translationEN from "../tranlation/en/translation.json";
+import translationRU from "../tranlation/ru/translation.json";
+import translationUZ from "../tranlation/uz/translation.json";
+import EnglishFlag from "../assets/icon/icons/usa.svg";
+import RusFlag from "../assets/icon/icons/rus.svg";
+import UzbFlag from "../assets/icon/icons/uzb.svg";
 
 const resources = {
   en: {
