@@ -11,9 +11,13 @@ import {
   TitleWrapper,
   BtnWrap,
 } from "./style";
+import { useContext } from "react";
+import { Cateogry } from "../../context/context";
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
+
+  const { open, setOpen } = useContext(Cateogry);
 
   const changeNav = () => {
     if (window.scrollY >= 80) setScrollNav(true);

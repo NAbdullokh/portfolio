@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../../generic/Button";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,24 +20,27 @@ import { SiCodewars } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
 import resume from "../../assets/Nigmatullaev Abdulloh.pdf";
 import Typewriter from "typewriter-effect";
-import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { Cateogry } from "../../context/context";
 
 const Main = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-  const {t} = useTranslation()
+
+  const { open, setOpen } = useContext(Cateogry);
+  const { t } = useTranslation();
   return (
     <Wrapper>
       <Container id="home">
         <Box1 data-aos="fade-right">
           <Box1.Title>
-            {t('Hi There')} , <br />
-          {t(`I'm Abdulloh Nigmatullaev`)}
+            {t("Hi There")} , <br />
+            {t(`I'm Abdulloh Nigmatullaev`)}
           </Box1.Title>
           <Box1.Description>
             I'm
-            <span 
+            <span
               style={{
                 color: "#ff7b00",
                 marginLeft: "10px",
