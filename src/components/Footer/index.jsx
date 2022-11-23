@@ -60,12 +60,12 @@ const Footer = () => {
                 </a>
               </EachIcon>
               <EachIcon>
-                <a href="https://instagram.com/a.nigmatullaev" target="_blank">
+                <a href="https://t.me/abdullokh_3747" target="_blank">
                   <TbBrandTelegram style={{ transform: "scale(1.2)" }} />
                 </a>
               </EachIcon>
               <EachIcon>
-                <a href="https://t.me/abdullokh_3747" target="_blank">
+                <a href="https://instagram.com/a.nigmatullaev" target="_blank">
                   <TbBrandInstagram style={{ transform: "scale(1.2)" }} />
                 </a>
               </EachIcon>

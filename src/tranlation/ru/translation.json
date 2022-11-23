@@ -1,3 +1,11 @@
 {
-    "Home" : "Домой"
+    "Home" : "Домой",
+    "About" : "О себе",
+    "Skills" : "Навыки",
+    "Education" : "Образование",
+    "Projects" : "Проекты",
+    "Contact" : "Контакты",
+    "Hi There": "Всем привет",
+    "I'm Abdulloh Nigmatullaev": "Я Абдуллох Нигматуллаев"
+    
 }
