@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #313536;
+  background-color: #000033;
 `;
 
 export const Container = styled.div`
@@ -69,9 +69,10 @@ export const EachIcon = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: white;
+  background: white;
   :hover {
-    background: transparent;
+    background: #079dd9;
+    box-shadow: 0px 12px 30px rgba(7, 157, 217, 0.19);
     transform: scale(0.98);
     border: 1px solid rgb(180, 178, 178);
     color: #ffae00;

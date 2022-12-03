@@ -12,8 +12,6 @@
   width: 10px;
 }
 
-
-
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px var(--secondGreen);
 }
@@ -30,6 +28,10 @@
   --whiteColor: #ffffff;
   --grayColor: #abaeb0;
   --secondGreen: #00e472;
+  --primary: #0091ff;
+  --dark: #061b28;
+  --gray: #756388;
+  --light: #ffffff;
 }
 
 /* skills */
@@ -227,4 +229,9 @@
   to {
     stroke-dashoffset: 401;
   }
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
 }

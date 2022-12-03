@@ -9,17 +9,19 @@ import Main from "../components/MainPart";
 import MainSkills from "../components/MainSkills";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
-import Sidebar from "../components/Sidebar";
+import SideNavBar from "../components/SideNavBar/SideNavBar";
 import Skills from "../components/Skills";
 import { Content, Wrapper } from "./style";
 
 const Root = () => {
   const [dark, setDark] = useState(true);
+  const [open, setOpen] = useState(false);
+
   return (
     <Wrapper>
-      <Sidebar />
+      <SideNavBar />
       <Content>
-        {/* <Navbar darkNightMode={dark} setDark={setDark} /> */}
+        <Navbar />
         <Main darkNightMode={dark} />
         <Count darkNightMode={dark} />
         <About darkNightMode={dark} />

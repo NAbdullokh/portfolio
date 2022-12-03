@@ -7,7 +7,7 @@ import {
 } from "reactstrap";
 import { useTranslation } from "react-i18next";
 import { languageMenu } from "../../config/i18nConfig";
-
+import { Dropdown, Button } from "antd";
 
 const LanguageDropdownComponent = () => {
   const { i18n } = useTranslation();
@@ -33,7 +33,7 @@ const LanguageDropdownComponent = () => {
   return (
     <>
       <div className="nav-item ">
-        <UncontrolledDropdown direction="down">
+        {/* <UncontrolledDropdown direction="down">
           <DropdownToggle
             color="transparent"
             className="dropdown-toggle dropdown-indicator has-indicator nav-link"
@@ -71,7 +71,19 @@ const LanguageDropdownComponent = () => {
               ))}
             </ul>
           </DropdownMenu>
-        </UncontrolledDropdown>
+          {/* </UncontrolledDropdown> */}
+        {languageMenu.map((value) => {
+          return (
+            <div style={{ color: "white", display: "flex" }}>
+              <h4
+                key={value?.id}
+                onClick={() => handleOnLanguageMenuItemSelected(value)}
+              >
+                {value.title}
+              </h4>
+            </div>
+          );
+        })}
       </div>
     </>
   );

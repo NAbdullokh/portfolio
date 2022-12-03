@@ -5,9 +5,11 @@ const getType = (type) => {
     case "primary":
       return {
         color: "white",
-        background: "var(--secondGreen)",
-        borderRadius: "38px",
+        background:
+          "linear-gradient(87.05deg, #DC6B30 17.99%, #E4864F 49.64%, #FFBE82 72.7%, #E49031 93.02%)",
+        borderRadius: "30px",
       };
+
     case "secondary":
       return {
         color: "white",
@@ -32,8 +34,8 @@ const getHover = (hover) => {
       };
     case "secondary":
       return {
-        backgroundColor: "#252829",
-        border: "1px solid var(--secondGreen)",
+        boxShadow:
+          "0px 3px 49px -3px rgba(226, 128, 72, 0.76), inset 0px -4px 0px #8F4119",
       };
     default:
       return {
@@ -52,7 +54,7 @@ const Container = styled.a`
   line-height: 20px;
   justify-content: center;
   align-items: center;
-  height: ${({ height }) => height || "50px"};
+  height: ${({ height }) => height || "55px"};
   min-width: ${({ width }) => (width ? width : "100%")};
   width: ${({ width }) => (width ? width : "100%")};
   border-radius: 6px;

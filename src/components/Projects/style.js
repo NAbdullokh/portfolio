@@ -80,6 +80,7 @@ export const Card = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
+  max-width: 400px;
 `;
 
 Card.Img = styled.img`

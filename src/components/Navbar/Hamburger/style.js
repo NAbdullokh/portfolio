@@ -3,7 +3,7 @@ import styled from "styled-components";
 // RightNav
 export const Ul = styled.ul`
   padding-left: 120px;
-  @media (max-width: 950px) {
+  @media (max-width: 647px) {
     padding-left: 24px;
   }
   ul {
@@ -14,7 +14,7 @@ export const Ul = styled.ul`
   li {
     list-style-type: none;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 647px) {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -46,7 +46,7 @@ export const Ul = styled.ul`
 
 export const Navbar = styled.div`
   display: none;
-  @media (max-width: 950px) {
+  @media (max-width: 647px) {
     display: flex;
   }
 `;

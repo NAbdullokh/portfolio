@@ -12,8 +12,12 @@ export const Wrapper = styled.div`
   z-index: 1000;
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 4px rgba(146, 161, 176, 0.3)" : "none"};
-  background-color: ${({ scrollNav }) => (scrollNav ? "#313536" : "#252829")};
+  background-color: ${({ scrollNav }) => (scrollNav ? "#000066" : "#000033")};
   transition: 0.5s;
+  margin-bottom: 10px;
+  @media (max-width: 647px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const Container = styled.div`
@@ -90,8 +94,8 @@ Container.Title2 = styled.a`
 
 export const ItemsWrapper = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 50px;
   @media (max-width: 950px) {
     display: none;

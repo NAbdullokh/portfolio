@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  background-color: #252829;
+  background-color: #000033;
 `;
 
 export const Container = styled.div`
@@ -110,15 +110,15 @@ export const EachIcon = styled.a`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background: linear-gradient(321.99deg, #82c36d 2.26%, #25523e 92.51%);
   transition: 0.3s;
-  background-color: #03a84e;
   @media (max-width: 350px) {
     width: 40px;
     height: 40px;
   }
 
   :hover {
-    background-color: ${({ type }) =>
+    background: ${({ type }) =>
       type === "instagram"
         ? "#FF9E2F"
         : type === "github"

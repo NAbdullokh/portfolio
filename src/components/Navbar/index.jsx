@@ -13,6 +13,7 @@ import {
 } from "./style";
 import { useContext } from "react";
 import { Cateogry } from "../../context/context";
+import { StyledBurger } from "./Hamburger/style";
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -36,24 +37,8 @@ const Navbar = () => {
           <Container.Title1 href="#">Abdulloh</Container.Title1>
           <Container.Title2 href="#">Abdulloh</Container.Title2>
         </TitleWrapper>
-        <ItemsWrapper>
-          <ItemsWrapper.Items href="#home">{t("Home")}</ItemsWrapper.Items>
-          <ItemsWrapper.Items href="#about">{t("About")}</ItemsWrapper.Items>
-          <ItemsWrapper.Items href="#skills">{t("Skills")}</ItemsWrapper.Items>
-          <ItemsWrapper.Items href="#education">
-            {t("Education")}
-          </ItemsWrapper.Items>
-          <ItemsWrapper.Items href="#projects">
-            {t("Projects")}
-          </ItemsWrapper.Items>
-        </ItemsWrapper>
         <LanguageDropdownComponent />
         <Nav />
-        <BtnWrap>
-          <Button width="190px" height="50px" href="#contact">
-            {t("Contact")}
-          </Button>
-        </BtnWrap>
       </Container>
     </Wrapper>
   );
