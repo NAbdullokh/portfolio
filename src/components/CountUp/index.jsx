@@ -4,9 +4,11 @@ import { Box, Container, IconWrap, Wrapper } from "./style";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Count = () => {
   const [counterOn, setCounterOn] = useState(false);
+  const { t } = useTranslation();
   return (
     <Wrapper>
       <Container>
@@ -36,7 +38,7 @@ const Count = () => {
                   {counterOn && <CountUp end={value.number} duration={5} />}
                 </ScrollTrigger>
               </Box.Number>
-              <Box.Title>{value.title}</Box.Title>
+              <Box.Title>{t(value.title)}</Box.Title>
             </Box>
           );
         })}

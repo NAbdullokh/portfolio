@@ -39,7 +39,7 @@ const Main = () => {
             {t(`I'm Abdulloh Nigmatullaev`)}
           </Box1.Title>
           <Box1.Description>
-            I'm
+            {t("I'm")}
             <span
               style={{
                 color: "#ff7b00",
@@ -49,7 +49,11 @@ const Main = () => {
             >
               <Typewriter
                 options={{
-                  strings: ["React Js Developer", "Problem Solver", "Human"],
+                  strings: [
+                    `${t("React Js Developer")}`,
+                    `${t("Problem Solver")}`,
+                    `${t("Human")}`,
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
@@ -105,7 +109,7 @@ const Main = () => {
           </IconWrapper>
           <ButtonWrapper href={resume} download>
             <Button width="191px" mr="25" type="primary" hover="secondary">
-              Dowland CV
+              {t("Dowland CV")}
             </Button>
           </ButtonWrapper>
         </Box1>

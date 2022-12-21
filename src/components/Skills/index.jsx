@@ -4,31 +4,21 @@ import { Card, CardWrapper, Container, Wrapper } from "./style";
 import { FaLaptopMedical } from "react-icons/fa";
 import Aos from "aos";
 import { Languages } from "../../mock/skills";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-  // const [data, setData] = useState([]);
-  // const [isLoading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("http://udontnow.pythonanywhere.com/api/v4/image/")
-  //     .then((res) => setData(res.data));
-  //   setLoading(false);
-  // }, []);
-
-  // if (isLoading) {
-  //   return <h1 style={{ color: "white" }}>Loading...</h1>;
-  // }
+  const { t } = useTranslation();
 
   return (
     <Wrapper id="skills">
       <Container>
         <Container.Title>
           <FaLaptopMedical style={{ marginRight: "5px" }} />
-          Skills & <span>Abilities</span>
+          {t("Skills")} & <span>{t("Abilities")}</span>
         </Container.Title>
         <CardWrapper>
           {Languages.map((value) => {

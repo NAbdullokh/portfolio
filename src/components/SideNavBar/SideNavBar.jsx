@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { navItems } from "../../mock/navItems";
 import "./SideNavBar.css";
 
 const SideNavBar = () => {
   const [isExpanded, setExpendState] = useState(false);
 
+  const { t } = useTranslation();
   return (
     <div
       className={
@@ -39,7 +41,7 @@ const SideNavBar = () => {
               href={value.path}
             >
               <img className="menu-item-icon" src={value.icon} alt="" />
-              {isExpanded && <p>{value.title}</p>}
+              {isExpanded && <p>{t(value.title)}</p>}
             </a>
           ))}
         </div>

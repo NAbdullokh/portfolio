@@ -5,14 +5,18 @@ import html from "../../assets/img/html.png";
 import css from "../../assets/img/css.png";
 import js from "../../assets/img/js.png";
 import react from "../../assets/img/react.png";
+import { useTranslation } from "react-i18next";
 
 const MainSkills = () => {
+  const { t } = useTranslation();
   return (
     <Wrapper>
       <Container>
         <Container.Title>
           <RiFolderSettingsFill style={{ marginRight: "5px" }} />
-          Main <span> skills</span>
+          {t("Main")}
+          {""}
+          <span> {t("skills")}</span>
         </Container.Title>
         <SkillsWrapper data-aos="fade-up">
           <figure className="chart" data-percent="75">

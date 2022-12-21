@@ -11,21 +11,25 @@ import {
 } from "./style";
 import { IoSchoolSharp } from "react-icons/io5";
 import Aos from "aos";
+import { useTranslation } from "react-i18next";
 
 const Education = () => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+
+  const { t } = useTranslation();
   return (
     <Wrapper id="education">
       <Container>
         <Container.Title>
           <IoSchoolSharp style={{ marginRight: "5px" }} />
-          My <span>Education</span>
+          {t("My")} <span>{t(" Education")}</span>
         </Container.Title>
         <p style={{ marginBottom: "20px" }}>
-          Education Is Not The Learning Of Facts, But The Training Of The Mind
-          To Think.
+          {t(
+            "Education Is Not The Learning Of Facts, But The Training Of The Mind To Think."
+          )}
         </p>
         <Line>
           <SideLine type="first">
